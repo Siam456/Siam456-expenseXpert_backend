@@ -1,0 +1,45 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "target": "ES2020",
+        "lib": ["ES2020", "esnext.asynciterable"],
+        "typeRoots": ["node_modules/@types"],
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "pretty": true,
+        "sourceMap": true,
+        "declaration": true,
+        "outDir": "./dist",
+        "allowJs": true,
+        "noEmit": false,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "importHelpers": true,
+        "baseUrl": "src",
+        "paths": {
+            "@app": ["app"],
+            "@modules/*": ["modules/*"],
+            "@exceptions/*": ["exceptions/*"],
+            "@interfaces/*": ["interfaces/*"],
+            "@middlewares/*": ["middlewares/*"],
+            "@utils/*": ["utils/*"]
+        }
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.json",
+        ".env",
+        "__tests__/index.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "./coverage",
+        "./dist",
+        "__tests__",
+        "jest.config.js"
+    ]
+}
